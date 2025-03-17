@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import profileImage from '../data/Zoomed_Profile.jpeg'; // Import the image
 
 const Header: React.FC = () => {
   return (
@@ -8,11 +9,12 @@ const Header: React.FC = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(4,120,87,0.3)_0%,_transparent_50%)] pointer-events-none"></div>
       <div className="container mx-auto px-6 py-24 relative">
         <div className="flex flex-col md:flex-row items-center gap-12">
-          <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-emerald-400/30 shadow-[0_0_30px_rgba(16,185,129,0.3)] transform hover:scale-105 transition-transform duration-300">
+          <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-emerald-400/30 shadow-[0_0_30px_rgba(16,185,129,0.3)] transform hover:scale-150 transition-transform duration-300">
             <img 
-              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400"
+              src={profileImage}
               alt="Jason Latz"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover custom-image"
+
             />
           </div>
           <div className="max-w-3xl text-center md:text-left">
@@ -26,7 +28,7 @@ const Header: React.FC = () => {
                 <Mail className="w-5 h-5 mr-2" /> latz@u.northwestern.edu
               </span>
               <span className="flex items-center text-emerald-200 backdrop-blur-sm bg-emerald-900/30 px-4 py-2 rounded-full">
-                <Phone className="w-5 h-5 mr-2" /> (602) 647-6299
+                <Phone className="w-5 h-5 mr-2" /> (602) 647-6295 
               </span>
             </div>
             <div className="flex justify-center md:justify-start space-x-4">

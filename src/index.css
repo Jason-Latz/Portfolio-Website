@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-image {
+    transform: scale(2); /* Scale by 150% */
+    image-rendering: smooth; /* Maintain image quality */
+  }
